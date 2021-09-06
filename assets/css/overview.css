@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    font-smooth: antialised;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: white;
+}
+
+body {
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#content h2, #content h5 {
+    color: black;
+    text-align: center;
+    margin:20px;
+    animation: dropdown 0.5s ease-in-out;
+}
+
+.btn {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#ov {
+    color: black;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#chartdiv {
+	width	: 100%;
+	height	: 500px;
+}		
+
+@keyframes dropdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

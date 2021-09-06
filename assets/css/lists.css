@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    font-smooth: antialised;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #000000  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#content h2 {
+    color: black;
+    text-align: center;
+    margin:40px;
+    animation: dropdown 0.5s ease-in-out;
+    
+}
+
+.card {
+    margin: 20px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    animation: dropdown 1.5s ease-in-out;
+    
+} 
+
+.card-body {
+    padding: 0;
+    
+}
+
+a {
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.card-title {
+    width: 100%;
+  background-image: linear-gradient(120deg, #B05A9C 0%, #B05A9C 100%);
+    color: white;
+    padding: 1.25em;
+    
+}
+
+.card-text {
+    margin: 1.25em;
+    
+}
+
+.btn-primary {
+    margin: 1.25em;
+    background-color: #B05A9C;
+}
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+  background-color: #B05A9C;
+  
+}
+
+@keyframes dropdown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+        transform: translateY(-10px);
+        
+    }
+    
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
